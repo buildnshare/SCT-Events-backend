@@ -1,0 +1,28 @@
+{
+  "name": "sct-events-backend",
+  "version": "1.0.0",
+  "description": "application for events in my college",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buildnshare/SCT-Events-backend.git"
+  },
+  "author": "Abhiram A R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buildnshare/SCT-Events-backend/issues"
+  },
+  "homepage": "https://github.com/buildnshare/SCT-Events-backend#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.0",
+    "nodemon": "^3.1.10",
+    "winston": "^3.18.3"
+  }
+}
