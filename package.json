@@ -5,7 +5,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev-main": "nodemon mainServer/src/server.js",
+    "dev-etlab": "nodemon etlabAuthServer/src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
