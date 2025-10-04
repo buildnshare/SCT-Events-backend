@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 import express from 'express'
-import logger from './utils/logger.js';
+import logger from '../../utils/logger.js';
 import './models/index.js';
 import mapRoutesFunc from './routes/index.js';
 
