@@ -4,6 +4,8 @@ dotenv.config();
 
 import express from 'express'
 import logger from './utils/logger.js';
+import './models/index.js';
+import mapRoutesFunc from './routes/index.js';
 
 const protocol = process.env.PROTOCOL;
 const host = process.env.HOST;
@@ -12,6 +14,7 @@ const port = process.env.PORT;
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+mapRoutesFunc(app);
 
 app.listen(port, () => {
     logger.info(`server listening on ${protocol}://${host}:${port} `)
